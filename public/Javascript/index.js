@@ -1,5 +1,5 @@
 const proxy = 'https://cors-anywhere.herokuapp.com/'
-const api = `http://miami-transit-api.herokuapp.com/api/TrainTracker.json`
+const api = `https://miami-transit-api.herokuapp.com/api/TrainTracker.json`
 
 fetch(api).then(response =>{
     return response.json();
