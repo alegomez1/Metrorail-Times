@@ -16,10 +16,11 @@ body{
     background-color: #343A40
 }
 .navi{
-    background-color: #282c30!important
+    background-color: #282c30!important;
+    height: 50px
 }
 .myCont{
-    padding: 20px 0 0 30px
+    padding: 10px 0 0 20px
 }
 h3{
     font-size: 32px;
