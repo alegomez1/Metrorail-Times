@@ -5,7 +5,7 @@ var port = process.env.PORT || 8081
 
 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/'));
 
 console.log(__dirname)
 app.get('/', function (req, res) {
