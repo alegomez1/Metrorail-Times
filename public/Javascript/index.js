@@ -59,24 +59,27 @@ let secondNBTrain = document.querySelector("body > div:nth-child(10) > h5:nth-ch
 let firstSBTrain = document.querySelector("body > div:nth-child(11) > h5:nth-child(2)").innerText
 let secondSBTrain = document.querySelector("body > div:nth-child(11) > h5:nth-child(3)").innerText
 
-if(userPick == 'Dadeland North'){
-    userStation = stations[6]
-    stationTitle += 'TEST'
-}
-if(userPick == 'Brickell'){
-    userStation = stations[1]
-    stationTitle += userPick
-}
-if(userPick == 'University'){
-    userStation = stations[21]
-    stationTitle += userPick
-}
 
 
 
 
 
 })
+
+function refresh(){
+    if(userPick == 'Dadeland North'){
+        userStation = stations[6]
+        stationTitle += 'TEST'
+    }
+    if(userPick == 'Brickell'){
+        userStation = stations[1]
+        stationTitle += userPick
+    }
+    if(userPick == 'University'){
+        userStation = stations[21]
+        stationTitle += userPick
+    }
+}
 
 
 console.log("Script ran")
