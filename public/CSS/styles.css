@@ -35,3 +35,17 @@ h3{
     width: 100px;
     margin: 40px 0 0 20px
 }
+.load-info-button{
+    width: 100px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    background-color: #343a40;
+    border: 2px solid white;
+    border-radius: 10px
+}
+.form-button-div{
+    display: flex;
+    justify-content: baseline;
+align-items: flex-end;
+}
