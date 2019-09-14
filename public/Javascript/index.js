@@ -50,7 +50,7 @@ document.querySelector("body > div:nth-child(7) > h5:nth-child(3)").innerText +=
 
 
 //User Selected Section
-const userPick = document.querySelector("body > select").value
+
 const stations = data.RecordSet.Record
 let userStation
 let stationTitle = document.querySelector("body > h3:nth-child(9)").innerText
@@ -62,10 +62,9 @@ let secondSBTrain = document.querySelector("body > div:nth-child(11) > h5:nth-ch
 
 
 
-
-
 })
 
+const userPick = document.querySelector("body > select").value
 function refresh(){
     if(userPick == 'Dadeland North'){
         userStation = stations[6]
@@ -79,7 +78,11 @@ function refresh(){
         userStation = stations[21]
         stationTitle += userPick
     }
+
+    console.log('Refresh func ran')
 }
+
+refresh()
 
 
 console.log("Script ran")
