@@ -1,4 +1,5 @@
 
+var userChoice = document.querySelector("#selector").value
 
 const proxy = 'https://cors-anywhere.herokuapp.com/'
 const api = `https://miami-transit-api.herokuapp.com/api/TrainTracker.json`
@@ -61,28 +62,29 @@ let secondSBTrain = document.querySelector("body > div:nth-child(11) > h5:nth-ch
 
 
 
-
+console.log('TEST')
+console.log(userChoice)
 })
 
-const userPick = document.querySelector("body > select").value
-function refresh(){
-    if(userPick == 'Dadeland North'){
-        userStation = stations[6]
-        stationTitle += 'TEST'
-    }
-    if(userPick == 'Brickell'){
-        userStation = stations[1]
-        stationTitle += userPick
-    }
-    if(userPick == 'University'){
-        userStation = stations[21]
-        stationTitle += userPick
-    }
+//const userPick = document.querySelector("body > select").value
+// function refresh(){
+//     if(userPick == 'Dadeland North'){
+//         userStation = stations[6]
+//         stationTitle += 'TEST'
+//     }
+//     if(userPick == 'Brickell'){
+//         userStation = stations[1]
+//         stationTitle += userPick
+//     }
+//     if(userPick == 'University'){
+//         userStation = stations[21]
+//         stationTitle += userPick
+//     }
 
-    console.log('Refresh func ran')
-}
+//     console.log('Refresh func ran')
+// }
 
-refresh()
+// refresh()
 
 
 console.log("Script ran")
