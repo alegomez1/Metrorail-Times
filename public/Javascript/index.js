@@ -4,10 +4,26 @@ var userChoice = document.querySelector("#selector").value
 const proxy = 'https://cors-anywhere.herokuapp.com/'
 const api = `https://miami-transit-api.herokuapp.com/api/TrainTracker.json`
 
+let data
+
+// let dadelandFirstNorthBoundTrainTime
+// let dadelandFirstNorthBoundTrainArrival
+// let dadelandSecondNorthBoundTrainTime
+// let dadelandSecondNorthBoundTrainArrival
+
+// let dadelandFirstSouthBoundTrainTime
+// let dadelandFirstSouthBoundTrainArrival
+// let dadelandSecondSouthBoundTrainTime
+// let dadelandSecondSouthBoundTrainArrival
+
+
+//Dadeland Variables
+
 fetch(api).then(response =>{
     return response.json();
-}).then(data => {
-console.log(data)
+}).then(trainData => {
+console.log(trainData)
+data = trainData
 //Dadeland Info
 const dadeland = data.RecordSet.Record[6]
 //North Trains
