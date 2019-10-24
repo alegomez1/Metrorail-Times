@@ -49,3 +49,8 @@ h3{
     justify-content: baseline;
 align-items: flex-end;
 }
+
+.navitem{
+    color: white;
+    padding-left: 40px;
+}
