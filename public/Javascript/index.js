@@ -1,5 +1,5 @@
 
-var userChoice = document.querySelector("#selector").value
+// var userChoice = document.querySelector("#selector").value
 
 const proxy = 'https://cors-anywhere.herokuapp.com/'
 const api = `https://miami-transit-api.herokuapp.com/api/TrainTracker.json`
@@ -70,7 +70,7 @@ document.querySelector("body > div:nth-child(7) > h5:nth-child(3)").innerText +=
 
 const stations = data.RecordSet.Record
 let userStation
-let stationTitle = document.querySelector("body > h3:nth-child(9)").innerText
+// let stationTitle = document.querySelector("body > h3:nth-child(9)").innerText
 let firstNBTrain = document.querySelector("body > div:nth-child(10) > h5:nth-child(2)").innerText
 let secondNBTrain = document.querySelector("body > div:nth-child(10) > h5:nth-child(3)").innerText
 let firstSBTrain = document.querySelector("body > div:nth-child(11) > h5:nth-child(2)").innerText
